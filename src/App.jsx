@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero.jsx";
 import HeroCard from "./components/HeroCard/HeroCard.jsx";
-import BgVideo from "./assets/earth-bg.mp4";
+import BgVideo from "./assets/winnipeg-bg.mp4";
 import wave from "./assets/wave Gif.gif";
 import Rapidscat from "./components/Rapidscat/Rapidscat.jsx";
 import Satelite from "./components/Satelite/Satelite.jsx";
