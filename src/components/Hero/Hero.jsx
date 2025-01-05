@@ -7,13 +7,10 @@ const Hero = () => {
         <div className="container grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="text-white space-y-4 lg:pr-36">
             <h1 data-aos="fade-up" className="text-5xl font-bold">
-              ORBIT THE EARTH
+            Capture the moment, preserve the memory
             </h1>
             <p data-aos="fade-up" data-aos-delay="300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ea
-              dolorem eius accusamus beatae. Nulla quis beatae quo, possimus
-              tempora similique dignissimos repellat aperiam veniam culpa
-              consequatur repudiandae asperiores saepe.
+            Life is made of moments. We are here to help you capture those moments and preserve the memories that matter most. 
             </p>
             <button
               data-aos="fade-up"

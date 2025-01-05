@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -14,6 +17,15 @@ export default {
           md: "2rem",
         },
       },
+      animation: {
+        'slowWave': 'wave 3s linear infinite',
+      },
+      keyframes: {
+        wave: {
+          '0%': { transform: 'translateY(-96px)' },
+          '100%': { transform: 'translateY(-96px)' },
+        }
+      }
     },
   },
   plugins: [],

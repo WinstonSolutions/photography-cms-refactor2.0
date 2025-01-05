@@ -1,6 +1,9 @@
 import React from "react";
 import wave from "../../assets/wave Gif.gif";
 import { FaReact } from "react-icons/fa";
+import { GiSittingDog } from "react-icons/gi";
+import { GiVitruvianMan } from "react-icons/gi";
+import { GiMountainCave } from "react-icons/gi";
 import { FaShuttleSpace, FaSpaceAwesome } from "react-icons/fa6";
 
 const ServiceData = [
@@ -9,7 +12,7 @@ const ServiceData = [
     content: "300-1500km",
     description:
       "Used for astronomical observations, capturing stunning images of the universe.",
-    icon: <FaReact className="text-7xl" />,
+    icon: <GiSittingDog className="text-7xl" />,
     aosDelay: "300",
   },
   {
@@ -17,7 +20,7 @@ const ServiceData = [
     content: "500-1500km",
     description:
       ", it's a habitable artificial satellite orbiting Earth and serves as a space environment research laboratory",
-    icon: <FaShuttleSpace className="text-7xl" />,
+    icon: <GiVitruvianMan  className="text-7xl" />,
     aosDelay: "500",
   },
   {
@@ -25,7 +28,7 @@ const ServiceData = [
     content: "300-1500km",
     description:
       "Part of the Global Positioning System (GPS) used for navigation.",
-    icon: <FaSpaceAwesome className="text-7xl" />,
+    icon: <GiMountainCave className="text-7xl" />,
     aosDelay: "700",
   },
 ];
@@ -55,7 +58,7 @@ const HeroCard = () => {
               <img
                 src={wave}
                 alt=""
-                className="h-[200px] w-full  object-cover mix-blend-screen -translate-y-24 relative z-[0]"
+                className="h-[150px] w-full object-cover mix-blend-screen -translate-y-24 relative z-[0] animate-slowWave"
               />
             </div>
           </div>
