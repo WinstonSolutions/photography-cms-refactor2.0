@@ -1,7 +1,7 @@
 import React from "react";
-import sateliteImg from "../../assets/satelite1.jpg";
+import cat from "../../assets/cat.jpg";
 
-const Rapidscat = () => {
+const Animal = () => {
   return (
     <>
       <section className="bg-primary text-white pb-12">
@@ -9,7 +9,7 @@ const Rapidscat = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
             <div data-aos="zoom-in">
               <img
-                src={sateliteImg}
+                src={cat}
                 alt=""
                 className="w-full sm:w-[80%] mx-auto max-h-[350px] object-cover"
               />
@@ -27,15 +27,10 @@ const Rapidscat = () => {
                 data-aos-delay="500"
                 className="uppercase text-5xl"
               >
-                Rapidscat
+                CAT
               </h1>
               <p data-aos="fade-up" data-aos-delay="700">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                molestiae reprehenderit expedita corporis, non doloremque.
-                Consequatur consectetur quisquam qui sunt. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Eos molestiae reprehenderit
-                expedita corporis, non doloremque. Consequatur consectetur
-                quisquam qui sunt.
+              Mysterious, graceful, and endlessly fascinating. We capture their beauty and unique personalities through our photography.
               </p>
               <button
                 data-aos="fade-up"
@@ -52,4 +47,4 @@ const Rapidscat = () => {
   );
 };
 
-export default Rapidscat;
+export default Animal;

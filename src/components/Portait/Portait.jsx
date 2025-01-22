@@ -1,7 +1,7 @@
 import React from "react";
-import satelitImg from "../../assets/satelite2.jpg";
+import portrait from "../../assets/portait.jpg";
 
-const Rapidscat = () => {
+const Portait = () => {
   return (
     <>
       <section className="bg-primary text-white py-20">
@@ -20,15 +20,10 @@ const Rapidscat = () => {
                 data-aos-delay="500"
                 className="uppercase text-5xl"
               >
-                Rapidscat
+                PORTAIT
               </h1>
               <p data-aos="fade-up" data-aos-delay="700">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                molestiae reprehenderit expedita corporis, non doloremque.
-                Consequatur consectetur quisquam qui sunt. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Eos molestiae reprehenderit
-                expedita corporis, non doloremque. Consequatur consectetur
-                quisquam qui sunt.
+              Light, Composition, and Emotion. We combine technical expertise with artistic vision to craft stunning and evocative portraits. Every detail is carefully considered, from posing to post-processing.
               </p>
               <button
                 data-aos="fade-up"
@@ -40,7 +35,7 @@ const Rapidscat = () => {
             </div>
             <div data-aos="zoom-in">
               <img
-                src={satelitImg}
+                src={portrait}
                 alt=""
                 className="w-full sm:w-[80%] mx-auto max-h-[350px] object-cover"
               />
@@ -52,4 +47,4 @@ const Rapidscat = () => {
   );
 };
 
-export default Rapidscat;
+export default Portait;

@@ -1,0 +1,12 @@
+### 请求注释 (可选)
+# 可以写一些注释
+GET http://localhost:5173/
+
+###  (多个请求可以通过三个###分割开)
+POST https://api.example.com/posts
+Content-Type: application/json
+
+{
+"title": "My Post",
+"body": "This is a post content."
+}

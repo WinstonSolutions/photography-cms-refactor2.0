@@ -4,12 +4,14 @@ import Hero from "./components/Hero/Hero.jsx";
 import HeroCard from "./components/HeroCard/HeroCard.jsx";
 import BgVideo from "./assets/winnipeg-bg.mp4";
 import wave from "./assets/wave Gif.gif";
-import Rapidscat from "./components/Rapidscat/Rapidscat.jsx";
-import Satelite from "./components/Satelite/Satelite.jsx";
+import Animal from "./components/Animal/Animal.jsx";
+import Portait from "./components/Portait/Portait.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Footer5 from "./components/Footer/Footer5.jsx";
+import LandScape from "./components/LandScape/LandScape.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 
 const App = () => {
   React.useEffect(() => {
@@ -33,8 +35,9 @@ const App = () => {
         <Hero />
       </div>
       <HeroCard />
-      <Rapidscat />
-      <Satelite />
+      <Animal />
+      <Portait />
+      <LandScape />
       {/* <Footer /> */}
       <Footer5 />
     </div>

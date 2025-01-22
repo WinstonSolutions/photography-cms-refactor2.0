@@ -8,26 +8,26 @@ import { FaShuttleSpace, FaSpaceAwesome } from "react-icons/fa6";
 
 const ServiceData = [
   {
-    title: "HST",
-    content: "300-1500km",
+    title: "ANIMAL",
+    content: "Pet Photography",
     description:
-      "Used for astronomical observations, capturing stunning images of the universe.",
+      "Capturing the adorable personalities of cats and dogs.",
     icon: <GiSittingDog className="text-7xl" />,
     aosDelay: "300",
   },
   {
-    title: "ISS",
-    content: "500-1500km",
+    title: "PORTAIT",
+    content: "Portrait Photography",
     description:
-      ", it's a habitable artificial satellite orbiting Earth and serves as a space environment research laboratory",
+      "Our portrait photography is about highlighting your individuality and confidence.",
     icon: <GiVitruvianMan  className="text-7xl" />,
     aosDelay: "500",
   },
   {
-    title: "GPS",
-    content: "300-1500km",
+    title: "LANDSCAPE",
+    content: "Nature Photography",
     description:
-      "Part of the Global Positioning System (GPS) used for navigation.",
+      "We capture the breathtaking landscapes and hidden gems around the globe.",
     icon: <GiMountainCave className="text-7xl" />,
     aosDelay: "700",
   },
