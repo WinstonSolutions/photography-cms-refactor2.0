@@ -1,0 +1,113 @@
+.gallery-container {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #060606;
+  padding-top: 0;
+  margin-top: -50px;
+}
+
+.gallery-gradient {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 150px;
+  z-index: 10;
+}
+
+.gallery-gradient-left {
+  left: 0;
+  background: linear-gradient(to left, rgba(6, 6, 6, 0) 0%, #060606 100%);
+}
+
+.gallery-gradient-right {
+  right: 0;
+  background: linear-gradient(to right, rgba(6, 6, 6, 0) 0%, #060606 100%);
+}
+
+.gallery-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  perspective: 2500px;
+  transform-style: preserve-3d;
+}
+
+.gallery-track {
+  display: flex;
+  height: auto;
+  min-height: 350px;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+  transform-style: preserve-3d;
+  width: 100%;
+  
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.gallery-item {
+  position: absolute;
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5%;
+  backface-visibility: hidden;
+  will-change: transform;
+  transform-origin: center center;
+  max-width: 450px;
+  max-height: 250px;
+}
+
+.gallery-img {
+  pointer-events: none;
+  min-width: 450px;
+  min-height: 250px;
+  max-width: 450px;
+  max-height: 250px;
+  width: 450px;
+  height: 250px;
+  border-radius: 16px;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  object-fit: cover;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+
+.gallery-item:hover .gallery-img {
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    height: 400px;
+  }
+  
+  .gallery-gradient {
+    width: 80px;
+  }
+  
+  .gallery-item {
+    padding: 1.5%;
+    max-width: 285px;
+    max-height: 160px;
+  }
+  
+  .gallery-img {
+    min-width: 285px;
+    min-height: 160px;
+    max-width: 285px;
+    max-height: 160px;
+    width: 285px;
+    height: 160px;
+  }
+} 

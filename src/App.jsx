@@ -11,7 +11,9 @@ import Footer5 from "./components/Footer/Footer5.jsx";
 import LandScape from "./components/LandScape/LandScape.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AnimalGallery from './pages/AnimalGallery/AnimalGallery';
+import Home from './pages/Home/Home';
 
 const App = () => {
   React.useEffect(() => {
@@ -21,26 +23,12 @@ const App = () => {
     });
   });
   return (
-    <div className="">
-      <div className="h-[700px] relative">
-        <video
-          autoPlay
-          loop
-          muted
-          className="fixed right-0 top-0 h-[700px] w-full object-cover z-[-1]"
-        >
-          <source src={BgVideo} type="video/mp4" />
-        </video>
-        <Navbar />
-        <Hero />
-      </div>
-      <HeroCard />
-      <Animal />
-      <Portait />
-      <LandScape />
-      {/* <Footer /> */}
-      <Footer5 />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/animal-gallery" element={<AnimalGallery />} />
+      </Routes>
+    </Router>
   );
 };
 

@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@components/*": ["src/components/*"],
+        "@assets/*": ["src/assets/*"]
+      },
+      "allowJs": true,
+    },
+      "include": [
+          "src/**/*"
+        ],
+  
+        "exclude": [
+            "node_modules",
+            "dist"
+         ]
+  }

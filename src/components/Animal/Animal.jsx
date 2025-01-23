@@ -1,5 +1,6 @@
 import React from "react";
 import cat from "../../assets/cat.jpg";
+import { Link } from "react-router-dom";
 
 const Animal = () => {
   return (
@@ -30,15 +31,16 @@ const Animal = () => {
                 CAT
               </h1>
               <p data-aos="fade-up" data-aos-delay="700">
-              Mysterious, graceful, and endlessly fascinating. We capture their beauty and unique personalities through our photography.
+                Mysterious, graceful, and endlessly fascinating. We capture their beauty and unique personalities through our photography.
               </p>
-              <button
+              <Link
+                to="/animal-gallery"
                 data-aos="fade-up"
                 data-aos-delay="900"
-                className="bg-blue-400 text-white hover:bg-blue-500 px-4 py-1 rounded-md duration-200"
+                className="inline-block bg-blue-400 text-white hover:bg-blue-500 px-4 py-1 rounded-md duration-200"
               >
                 View All
-              </button>
+              </Link>
             </div>
           </div>
         </div>
