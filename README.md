@@ -84,4 +84,4 @@ src/
 
 ## 📄 License
 
-Copyright © 2024 Winston. All rights reserved.
+Copyright © 2025 Winston. All rights reserved.
